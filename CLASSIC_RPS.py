@@ -7,7 +7,9 @@ response = ("rock","paper","scissors")
 is_running = True
 print("-----CLASSIC RPS-----")
 while is_running:
-    player = input("YOUR CHOICE:").lower()
+   player=None
+   while player not in response:
+    player = input("enter response:")
     computer = random.choice(response)
     if player == computer:
         print("TIE!")
