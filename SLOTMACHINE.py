@@ -31,6 +31,7 @@ def get_payout(row, bet):
         return 0
 
 
+
 def main():
 
     balance=input("ENTER BALANCE:")
